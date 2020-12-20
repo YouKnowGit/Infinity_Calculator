@@ -1,0 +1,11 @@
+# Place your infinite calculator (named 'inf_calc') in this directory.
+# And type this command to begin the test.
+
+chmod +x evaluation.sh
+./evaluation.sh
+
+# WARNING: The total test shouldn't exceed 5 minutes.
+# WARNING: You should use fopen with argv[1] recevied from main() function.
+#	ex) int main(int argc, char* argv[]) { fopen(argv[1], "r+"); }
+
+

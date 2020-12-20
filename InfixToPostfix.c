@@ -12,15 +12,14 @@ void EvalRPNExp(List* pos, char* exp) {
 
     OperatorInit(&op);
 
-    for (i = 0; exp[i] == '\0'; i++) {
+    for (i = 0; ;i++) {
         tok = exp[i];
-        if (isdigit(exp[i])) {                      // tok에 저장된 문자가 숫자인지 확인
+        if (tok == '\0')
+            break;
+        if (isdigit(tok) || tok == '.') {                      // tok에 저장된 문자가 숫자인지 확인
             LInsert(&list, tok);                    // 숫자라면 리스트에 저장
         } else {                                    // tok에 저장된 문자가 숫자가 아니라면,
             switch (tok) {
-                case '.':                           // '.' 이면,
-                    LInsert(&list, tok);            // 소수점을 배열에 저장.
-                    break;
                 case '(':                           // '(' 이면,
                     LInsert(&list, ' ');
                     OperatorPush(&op, tok);         // stack애 쌓는다.
@@ -37,8 +36,10 @@ void EvalRPNExp(List* pos, char* exp) {
                 case '+': case '-':
                 case '*': case '/':
                     LInsert(&list, ' ');
-                    while (!OperatorIsEmpty(&op) && whoPrecOp(OperatorPeek(&op), tok) >= 0)
+                    while (!OperatorIsEmpty(&op) && whoPrecOp(OperatorPeek(&op), tok) >= 0) {
                         LInsert(&list, OperatorPop(&op));
+                    }
+
                     OperatorPush(&op, tok);
                     break;
             }

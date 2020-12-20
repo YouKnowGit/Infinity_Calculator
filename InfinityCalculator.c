@@ -106,8 +106,8 @@ int DecPartPeek(Num * pnum) {
 
 void ListInit(List * plist) {
     plist->head = (Node*)malloc(sizeof(Node));
+    plist->tail = plist->head->next;
     plist->head->next = NULL;
-    plist->tail = NULL;
     plist->cur  = NULL;
 }
 
@@ -116,7 +116,7 @@ void LInsert(List * plist, Data data) {
     newNode->data = data;
     newNode->next = NULL;
 
-    if (plist->head == NULL) {
+    if (plist->head->next == NULL) {
         plist->head->next = newNode;
     }
     else {
@@ -129,22 +129,22 @@ Data LRemove(List* plist) {
     Data rdata;
     Node* rnode;
 
-    if (plist->head == NULL) {
+    if (plist->head->next == NULL) {
         printf("list memory error");
         exit(-1);
     }
 
-    rdata = plist->head->data;
-    rnode = plist->head;
+    rdata = plist->head->next->data;
+    rnode = plist->head->next;
 
-    plist->head = plist->head->next;
+    plist->head->next = plist->head->next->next;
     free(rnode);
 
     return rdata;
 }
 
 void LRead(List * plist) {
-    plist->cur = plist->head;
+    plist->cur = plist->head->next;
     printf("%c", plist->cur->data);
     while(plist->cur->next != NULL) {
         plist->cur = plist->cur->next;
@@ -176,11 +176,11 @@ void OperatorPush(Operator * pOp, char data) {
 }
 
 Data OperatorPop(Operator * pOp) {
-    char rdata;
+    Data rdata;
     Node * rnode;
 
     if (OperatorIsEmpty(pOp)) {
-        printf("stack memory error");
+        printf("Stack memory Error!");
         exit(-1);
     }
 

@@ -74,6 +74,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.c">
+			<Option target="inf_calc"/>
+		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.h">
+			<Option target="inf_calc"/>
+		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.c">
+			<Option target="inf_calc"/>
+		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.h">
+			<Option target="inf_calc"/>
+		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.c">
+			<Option target="inf_calc"/>
+		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.h">
+			<Option target="inf_calc"/>
+		</Unit>
 		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/input.txt">
 			<Option target="inf_calc"/>
 		</Unit>

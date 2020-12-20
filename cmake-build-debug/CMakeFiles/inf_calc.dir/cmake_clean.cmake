@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj"
+  "CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj"
+  "CMakeFiles/inf_calc.dir/Input.c.obj"
   "CMakeFiles/inf_calc.dir/main.c.obj"
   "inf_calc.exe"
   "inf_calc.exe.manifest"

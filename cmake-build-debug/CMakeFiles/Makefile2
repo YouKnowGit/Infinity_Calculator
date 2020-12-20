@@ -93,12 +93,12 @@ clean: CMakeFiles/inf_calc.dir/clean
 CMakeFiles/inf_calc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target inf_calc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target inf_calc"
 .PHONY : CMakeFiles/inf_calc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/inf_calc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/inf_calc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/inf_calc.dir/rule

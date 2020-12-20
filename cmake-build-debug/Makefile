@@ -142,6 +142,87 @@ inf_calc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/build
 .PHONY : inf_calc/fast
 
+InfinityCalculator.obj: InfinityCalculator.c.obj
+
+.PHONY : InfinityCalculator.obj
+
+# target to build an object file
+InfinityCalculator.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj
+.PHONY : InfinityCalculator.c.obj
+
+InfinityCalculator.i: InfinityCalculator.c.i
+
+.PHONY : InfinityCalculator.i
+
+# target to preprocess a source file
+InfinityCalculator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/InfinityCalculator.c.i
+.PHONY : InfinityCalculator.c.i
+
+InfinityCalculator.s: InfinityCalculator.c.s
+
+.PHONY : InfinityCalculator.s
+
+# target to generate assembly for a file
+InfinityCalculator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/InfinityCalculator.c.s
+.PHONY : InfinityCalculator.c.s
+
+InfixToPostfix.obj: InfixToPostfix.c.obj
+
+.PHONY : InfixToPostfix.obj
+
+# target to build an object file
+InfixToPostfix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj
+.PHONY : InfixToPostfix.c.obj
+
+InfixToPostfix.i: InfixToPostfix.c.i
+
+.PHONY : InfixToPostfix.i
+
+# target to preprocess a source file
+InfixToPostfix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/InfixToPostfix.c.i
+.PHONY : InfixToPostfix.c.i
+
+InfixToPostfix.s: InfixToPostfix.c.s
+
+.PHONY : InfixToPostfix.s
+
+# target to generate assembly for a file
+InfixToPostfix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/InfixToPostfix.c.s
+.PHONY : InfixToPostfix.c.s
+
+Input.obj: Input.c.obj
+
+.PHONY : Input.obj
+
+# target to build an object file
+Input.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/Input.c.obj
+.PHONY : Input.c.obj
+
+Input.i: Input.c.i
+
+.PHONY : Input.i
+
+# target to preprocess a source file
+Input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/Input.c.i
+.PHONY : Input.c.i
+
+Input.s: Input.c.s
+
+.PHONY : Input.s
+
+# target to generate assembly for a file
+Input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/Input.c.s
+.PHONY : Input.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +259,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... inf_calc
+	@echo ... InfinityCalculator.obj
+	@echo ... InfinityCalculator.i
+	@echo ... InfinityCalculator.s
+	@echo ... InfixToPostfix.obj
+	@echo ... InfixToPostfix.i
+	@echo ... InfixToPostfix.s
+	@echo ... Input.obj
+	@echo ... Input.i
+	@echo ... Input.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

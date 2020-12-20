@@ -12,17 +12,19 @@ void NumInit(Num * pnum) {
 
 
 int IntPartIsEmpty(Num * pnum) {
-    if (pnum->integer_part == NULL)
+    if (pnum->integer_part == NULL) {
         return TRUE;
-    else
+    } else {
         return FALSE;
+    }
 }
 
 int DecPartIsEmpty(Num * pnum) {
-    if (pnum->decimal_part == NULL)
+    if (pnum->decimal_part == NULL) {
         return TRUE;
-    else
+    } else {
         return FALSE;
+    }
 }
 
 void IntPartPush(Num * pnum, int data) {
@@ -40,7 +42,7 @@ void DecPartPush(Num * pnum, int data) {
     newDigit->digit = data;
     newDigit->next = pnum->decimal_part;
 
-    pnum->decimal_part = newDigite;
+    pnum->decimal_part = newDigit;
 }
 
 int IntPartPop(Num * pnum) {
@@ -55,7 +57,7 @@ int IntPartPop(Num * pnum) {
     rdata = pnum->integer_part->digit;
     rnode = pnum->integer_part;
 
-    pnum->integer_part = pnum->integer_part->digit;
+    pnum->integer_part = pnum->integer_part->next;
     free(rnode);
 
     return rdata;
@@ -103,7 +105,7 @@ void ListInit(List * plist) {
     plist->tail = NULL;
 }
 
-void LInsert(List * plist, char data) {
+void LInsert(List * plist, Data data) {
     Node * newNode = (Node*)malloc(sizeof(Node));
     newNode->data = data;
     newNode->next = NULL;
@@ -117,9 +119,9 @@ void LInsert(List * plist, char data) {
     plist->tail = newNode;
 }
 
-char LRemove(List* plist) {
-    LData rdata;
-    LNode* rnode;
+Data LRemove(List* plist) {
+    Data rdata;
+    Node* rnode;
 
     if (plist->head == NULL) {
         printf("list memory error");
@@ -142,10 +144,11 @@ void OperatorInit(Operator * pOp) {
 }
 
 int OperatorIsEmpty(Operator * pOp) {
-    if (pOp->head == NULL)
+    if (pOp->head == NULL) {
         return TRUE;
-    else
+    } else {
         return FALSE;
+    }
 }
 
 void OperatorPush(Operator * pOp, char data) {
@@ -223,7 +226,7 @@ Num OperandPop(Operand * pOp) {
 }
 
 Num OperandPeek(Operand * pOp) {
-    if (OprandIsEmpty(&pOp)) {
+    if (OperandIsEmpty(pOp)) {
         printf("stack memory error");
         exit(-1);
     }

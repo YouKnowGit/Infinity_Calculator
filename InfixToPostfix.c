@@ -4,15 +4,16 @@
 int getOpPrec(char op);
 int whoPrecOp(char op1, char op2);
 
-List inf_to_pos(char* exp) {
+List EvalRPNExp(char* exp) {
     Operator op;
     List convExp;
-    int i, idx = 0;
+    int i;
     char tok, popOp;
 
-    StackInit(&stack);
+    OperatorInit(&op);
+    ListInit(&convExp);
 
-    for (i = 0; exp[i] == NULL; i++) {
+    for (i = 0; exp[i] == '\0'; i++) {
         tok = exp[i];
         if (isdigit(tok)) {                         // tok에 저장된 문자가 숫자인지 확인
             LInsert(&convExp, tok);                 // 숫자라면 배열에 저장
@@ -21,11 +22,11 @@ List inf_to_pos(char* exp) {
                 case '.':                           // '.' 이면,
                     LInsert(&convExp, tok);         // 소수점을 배열에 저장.
                 case '(':                           // '(' 이면,
-                    LInsert(&covExp, ' ');
-                    OperatorPush(&op, tok);              // stack애 쌓는다.
+                    LInsert(&convExp, ' ');
+                    OperatorPush(&op, tok);         // stack애 쌓는다.
                     break;
                 case ')':                           // ')' 이면,
-                    LInsert(&covExp, ' ');
+                    LInsert(&convExp, ' ');
                     while (1) {                     // 반복해서
                         popOp = OperatorPop(&op);        // stack에서 꺼낸다.
                         if (popOp == '(')           // '(' 일 때까지,
@@ -35,7 +36,7 @@ List inf_to_pos(char* exp) {
                     break;
                 case '+': case '-':
                 case '*': case '/':
-                    LInsert(&covExp, ' ');
+                    LInsert(&convExp, ' ');
                     while (!OperatorIsEmpty(&op) && whoPrecOp(OperatorPeek(&op), tok) >= 0)
                         LInsert(&convExp, OperatorPop(&op));
                     OperatorPush(&op, tok);
@@ -45,7 +46,7 @@ List inf_to_pos(char* exp) {
     }
 
     while (!OperatorIsEmpty(&op))                   // 스택에 남아있는 모든 연산자를,
-        LInsert(&convExp, OperatorPop(&op));         // 배열에 저장.
+        LInsert(&convExp, OperatorPop(&op));         // 리스트에 저장.
 
     return convExp;
 }

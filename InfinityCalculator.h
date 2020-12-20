@@ -6,9 +6,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define TRUE    1;
-#define FALSE   0;
-
 typedef struct _digit {
     int digit;
     struct _digit * next;
@@ -36,7 +33,7 @@ typedef struct _block {
 typedef struct _list {
     Node * head;
     Node * tail;
-} List;
+} List, *pList;
 
 typedef struct _operator {
     Node * head;
@@ -57,18 +54,18 @@ int IntPartPeek(Num * pnum);
 int DecPartPeek(Num * pnum);
 
 void ListInit (List * plist);
-void LInsert (List * plist);
-List LRemove (List * plist);
+void LInsert (List * plist, Data data);
+Data LRemove (List * plist);
 
 void OperatorInit (Operator * pOp);
-int OperatorIsEmpty(Operand * pOp);
-void OperatorPush (Operator * pOp);
+int OperatorIsEmpty(Operator * pOp);
+void OperatorPush (Operator * pOp, Data data);
 Data OperatorPop (Operator * pOp);
-Data OperatorPeek (Operand * pOp);
+Data OperatorPeek (Operator * pOp);
 
 void OperandInit (Operand * pOp);
 int OperandIsEmpty(Operand * pOp);
-void OperandPush (Operand * pOp);
+void OperandPush (Operand * pOp, Num data);
 Num OperandPop (Operand * pOp);
 Num OperandPeek (Operand * pOp);
 

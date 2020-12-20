@@ -8,12 +8,12 @@
 
 Num EvalRPNExp(pList * postExp);
 
-Plus(Num op1, Num op2);
+Num Plus(Num op1, Num op2);
 
-Minus(Num op1, Num op2);
+Num Minus(Num op1, Num op2);
 
-Multiply(Num op1, Num op2);
+Num Multiply(Num op1, Num op2);
 
-Divide(Num op1, Num op2);
+Num Divide(Num op1, Num op2);
 
 #endif

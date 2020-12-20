@@ -6,14 +6,13 @@ Num EvalRPNExp(List * postExp) {
     Num num, result;
 
     int flag = INT;
-    int len[] = {0, 0};
     char tok;
 
     OperandInit(&operand);
     NumInit(&op);
 
     while (postExp->head != NULL) {
-        tok = postExp->head->data;
+        tok = LRemove(&postExp);
         int n = tok - '0';
 
         if (isdigit(tok)) {
@@ -29,6 +28,7 @@ Num EvalRPNExp(List * postExp) {
         } else if (tok == ' ') {
             flag = TRUE;
             OperandPush(&operand, num);
+            NumInit(&num);
         } else {
             switch (tok) {
                 case '+':
@@ -46,6 +46,8 @@ Num EvalRPNExp(List * postExp) {
 }
 
 Num Plus(Num op1, Num op2) {
+    Digit IntPart, DecPart;
+
 
 }
 

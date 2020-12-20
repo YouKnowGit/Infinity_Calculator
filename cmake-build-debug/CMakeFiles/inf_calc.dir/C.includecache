@@ -16,13 +16,25 @@ stdlib.h
 ctype.h
 -
 
-C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.c
-InfixToPostfix.h
 C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.h
 InfinityCalculator.h
 C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.h
 
-C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.h
+C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/main.c
+stdio.h
+-
+stdlib.h
+-
 InfinityCalculator.h
 C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.h
+Input.h
+C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.h
+InfixToPostfix.h
+C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.h
 

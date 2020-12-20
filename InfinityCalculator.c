@@ -3,6 +3,11 @@
 #define TRUE        1
 #define FALSE       0
 
+void DigitInit(Digit * pdigit){
+    pdigit->digit = 0
+    pdigit->next = NULL;
+}
+
 void NumInit(Num * pnum) {
     pnum->integer_part_size = 0;
     pnum->decimal_part_size = 0;

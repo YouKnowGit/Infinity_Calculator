@@ -18,5 +18,5 @@ int main(void)
 
     pos_fix = EvalRPNExp(p);
 
-    printf("%c", LRemove(&pos_fix));
+    printf("%s", LRemove(&pos_fix));
 }

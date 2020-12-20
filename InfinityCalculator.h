@@ -43,6 +43,8 @@ typedef struct _operand {
     Block * head;
 } Operand;
 
+void DigitInit(Digit * pdigit);
+
 void NumInit(Num * pnum);
 int IntPartIsEmpty(Num * pnum);
 int DecPartIsEmpty(Num * pnum);

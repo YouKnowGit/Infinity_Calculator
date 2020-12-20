@@ -4,7 +4,7 @@
 #define FALSE       0
 
 void DigitInit(Digit * pdigit){
-    pdigit->digit = 0
+    pdigit->digit = 0;
     pdigit->next = NULL;
 }
 
@@ -100,14 +100,15 @@ int DecPartPeek(Num * pnum) {
         printf("stack memory error");
         exit(-1);
     }
-
     return pnum->decimal_part->digit;
 }
 
 
 void ListInit(List * plist) {
-    plist->head = NULL;
+    plist->head = (Node*)malloc(sizeof(Node));
+    plist->head->next = NULL;
     plist->tail = NULL;
+    plist->cur  = NULL;
 }
 
 void LInsert(List * plist, Data data) {
@@ -116,7 +117,7 @@ void LInsert(List * plist, Data data) {
     newNode->next = NULL;
 
     if (plist->head == NULL) {
-        plist->head = newNode;
+        plist->head->next = newNode;
     }
     else {
         plist->tail->next = newNode;
@@ -140,6 +141,15 @@ Data LRemove(List* plist) {
     free(rnode);
 
     return rdata;
+}
+
+void LRead(List * plist) {
+    plist->cur = plist->head;
+    printf("%c", plist->cur->data);
+    while(plist->cur->next != NULL) {
+        plist->cur = plist->cur->next;
+        printf("%c", plist->cur->data);
+    }
 }
 
 /* 연산자 스택 */

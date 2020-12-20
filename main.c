@@ -10,13 +10,12 @@ int main(void)
 {
 	char *p;
 	List pos_fix;
-
 	ListInit(&pos_fix);
 
 	p = Input();
 	printf("%s\n", p);
 
-    pos_fix = EvalRPNExp(p);
+    EvalRPNExp(&pos_fix, p);
+    LRead(&pos_fix);
 
-    printf("%s", LRemove(&pos_fix));
 }

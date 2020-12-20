@@ -33,6 +33,7 @@ typedef struct _block {
 typedef struct _list {
     Node * head;
     Node * tail;
+    Node * cur;
 } List, *pList;
 
 typedef struct _operator {
@@ -58,6 +59,7 @@ int DecPartPeek(Num * pnum);
 void ListInit (List * plist);
 void LInsert (List * plist, Data data);
 Data LRemove (List * plist);
+void LRead (List * plist);
 
 void OperatorInit (Operator * pOp);
 int OperatorIsEmpty(Operator * pOp);

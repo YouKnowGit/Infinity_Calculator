@@ -15,7 +15,6 @@ void NumInit(Num * pnum) {
     pnum->decimal_part = NULL;
 }
 
-
 int IntPartIsEmpty(Num * pnum) {
     if (pnum->integer_part == NULL) {
         return TRUE;
@@ -102,7 +101,6 @@ int DecPartPeek(Num * pnum) {
     }
     return pnum->decimal_part->digit;
 }
-
 
 void ListInit(List * plist) {
     plist->head = (Node*)malloc(sizeof(Node));

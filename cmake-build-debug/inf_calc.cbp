@@ -92,6 +92,12 @@
 		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.h">
 			<Option target="inf_calc"/>
 		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/PostCalculator.c">
+			<Option target="inf_calc"/>
+		</Unit>
+		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/PostCalculator.h">
+			<Option target="inf_calc"/>
+		</Unit>
 		<Unit filename="C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/input.txt">
 			<Option target="inf_calc"/>
 		</Unit>

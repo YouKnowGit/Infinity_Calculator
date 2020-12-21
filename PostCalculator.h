@@ -3,10 +3,10 @@
 
 #include "InfixToPostfix.h"
 
-#define INT     0;
-#define DEC     1;
+#define INT     0
+#define DEC     1
 
-Num EvalRPNExp(pList * postExp);
+Num EvalRPNExp(List * postExp);
 
 Num Plus(Num op1, Num op2);
 

@@ -11,8 +11,14 @@ CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj: ../InfixToPostfix.h
 CMakeFiles/inf_calc.dir/Input.c.obj: ../Input.c
 CMakeFiles/inf_calc.dir/Input.c.obj: ../Input.h
 
+CMakeFiles/inf_calc.dir/PostCalculator.c.obj: ../InfinityCalculator.h
+CMakeFiles/inf_calc.dir/PostCalculator.c.obj: ../InfixToPostfix.h
+CMakeFiles/inf_calc.dir/PostCalculator.c.obj: ../PostCalculator.c
+CMakeFiles/inf_calc.dir/PostCalculator.c.obj: ../PostCalculator.h
+
 CMakeFiles/inf_calc.dir/main.c.obj: ../InfinityCalculator.h
 CMakeFiles/inf_calc.dir/main.c.obj: ../InfixToPostfix.h
 CMakeFiles/inf_calc.dir/main.c.obj: ../Input.h
+CMakeFiles/inf_calc.dir/main.c.obj: ../PostCalculator.h
 CMakeFiles/inf_calc.dir/main.c.obj: ../main.c
 

@@ -9,13 +9,14 @@
 typedef struct _digit {
     int digit;
     struct _digit * next;
-} Digit, pDigit;
+} Digit, *pDigit;
 
 typedef struct _number {
     int integer_part_size;
     int decimal_part_size;
     Digit * integer_part;
     Digit * decimal_part;
+    Digit * cur;
 } Num, *pNum;
 
 typedef char Data;

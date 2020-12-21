@@ -223,6 +223,33 @@ Input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/Input.c.s
 .PHONY : Input.c.s
 
+PostCalculator.obj: PostCalculator.c.obj
+
+.PHONY : PostCalculator.obj
+
+# target to build an object file
+PostCalculator.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/PostCalculator.c.obj
+.PHONY : PostCalculator.c.obj
+
+PostCalculator.i: PostCalculator.c.i
+
+.PHONY : PostCalculator.i
+
+# target to preprocess a source file
+PostCalculator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/PostCalculator.c.i
+.PHONY : PostCalculator.c.i
+
+PostCalculator.s: PostCalculator.c.s
+
+.PHONY : PostCalculator.s
+
+# target to generate assembly for a file
+PostCalculator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inf_calc.dir\build.make CMakeFiles/inf_calc.dir/PostCalculator.c.s
+.PHONY : PostCalculator.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -268,6 +295,9 @@ help:
 	@echo ... Input.obj
 	@echo ... Input.i
 	@echo ... Input.s
+	@echo ... PostCalculator.obj
+	@echo ... PostCalculator.i
+	@echo ... PostCalculator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

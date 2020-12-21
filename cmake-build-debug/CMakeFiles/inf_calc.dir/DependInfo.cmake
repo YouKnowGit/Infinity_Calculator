@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.c" "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/cmake-build-debug/CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj"
   "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.c" "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/cmake-build-debug/CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj"
   "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.c" "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/cmake-build-debug/CMakeFiles/inf_calc.dir/Input.c.obj"
+  "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/PostCalculator.c" "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/cmake-build-debug/CMakeFiles/inf_calc.dir/PostCalculator.c.obj"
   "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/main.c" "C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/cmake-build-debug/CMakeFiles/inf_calc.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

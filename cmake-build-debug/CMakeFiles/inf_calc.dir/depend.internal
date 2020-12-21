@@ -11,8 +11,14 @@ CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj
 CMakeFiles/inf_calc.dir/Input.c.obj
  C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.c
  C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.h
+CMakeFiles/inf_calc.dir/PostCalculator.c.obj
+ C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.h
+ C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.h
+ C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/PostCalculator.c
+ C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/PostCalculator.h
 CMakeFiles/inf_calc.dir/main.c.obj
  C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfinityCalculator.h
  C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/InfixToPostfix.h
  C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/Input.h
+ C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/PostCalculator.h
  C:/Users/choi1_lrf1xg7/CLionProjects/Infinity_Calculator/main.c

@@ -6,6 +6,6 @@
 #define TRUE        1
 #define FALSE       0
 
-void EvalRPNExp(List* list, char * exp);
+void InfToPos(List* list, char * exp);
 
 #endif

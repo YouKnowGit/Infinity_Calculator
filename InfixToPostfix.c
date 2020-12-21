@@ -4,7 +4,7 @@
 int getOpPrec(char op);
 int whoPrecOp(char op1, char op2);
 
-void EvalRPNExp(List* pos, char* exp) {
+void InfToPos(List* pos, char* exp) {
     Operator op;
     List list = *pos;
     int i;
@@ -14,18 +14,19 @@ void EvalRPNExp(List* pos, char* exp) {
 
     for (i = 0; ;i++) {
         tok = exp[i];
-        if (tok == '\0')
+        if (tok == '\0'){
+            LInsert(&list, ' ');
             break;
+        }
         if (isdigit(tok) || tok == '.') {                      // tok에 저장된 문자가 숫자인지 확인
             LInsert(&list, tok);                    // 숫자라면 리스트에 저장
         } else {                                    // tok에 저장된 문자가 숫자가 아니라면,
+            LInsert(&list, ' ');
             switch (tok) {
                 case '(':                           // '(' 이면,
-                    LInsert(&list, ' ');
                     OperatorPush(&op, tok);         // stack애 쌓는다.
                     break;
                 case ')':                           // ')' 이면,
-                    LInsert(&list, ' ');
                     while (1) {                     // 반복해서
                         popOp = OperatorPop(&op);   // stack에서 꺼낸다.
                         if (popOp == '(')           // '(' 일 때까지,
@@ -35,7 +36,6 @@ void EvalRPNExp(List* pos, char* exp) {
                     break;
                 case '+': case '-':
                 case '*': case '/':
-                    LInsert(&list, ' ');
                     while (!OperatorIsEmpty(&op) && whoPrecOp(OperatorPeek(&op), tok) >= 0) {
                         LInsert(&list, OperatorPop(&op));
                     }
@@ -71,9 +71,8 @@ int whoPrecOp(char op1, char op2) {
 
     if (op1Prec > op2Prec)      // 연산자 우선순위가 op1이 더 높을 경우,
         return 1;
-    else if (op1Prec > op2Prec) // 연산자 우선순위가 op2가 더 높을 경우,
+    else if (op1Prec < op2Prec) // 연산자 우선순위가 op2가 더 높을 경우,
         return -1;
     else                        // 연산자 우선순위가 서로 같을 경우,
         return 0;
 }
-

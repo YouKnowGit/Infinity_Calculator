@@ -1,5 +1,4 @@
 #include "InfixToPostfix.h"
-#include "InfinityCalculator.h"
 
 int getOpPrec(char op);
 int whoPrecOp(char op1, char op2);

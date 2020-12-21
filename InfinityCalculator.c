@@ -211,7 +211,7 @@ int OperandIsEmpty(Operand * pOp) {
         return FALSE;
 }
 
-void OperandPush(Operand * pOp, Num data) {
+void OperandPush(Operand* pOp, Num* data) {
     Block * newBlock = (Block*)malloc(sizeof(Block));
 
     newBlock->operand = data;
@@ -220,8 +220,8 @@ void OperandPush(Operand * pOp, Num data) {
     pOp->head = newBlock;
 }
 
-Num OperandPop(Operand * pOp) {
-    Num rdata;
+Num* OperandPop(Operand * pOp) {
+    Num* rdata;
     Block * rblock;
 
     if (OperandIsEmpty(pOp)) {
@@ -238,7 +238,7 @@ Num OperandPop(Operand * pOp) {
     return rdata;
 }
 
-Num OperandPeek(Operand * pOp) {
+Num* OperandPeek(Operand * pOp) {
     if (OperandIsEmpty(pOp)) {
         printf("stack memory error");
         exit(-1);

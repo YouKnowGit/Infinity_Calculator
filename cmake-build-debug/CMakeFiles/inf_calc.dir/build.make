@@ -76,22 +76,9 @@ include CMakeFiles/inf_calc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/inf_calc.dir/flags.make
 
-CMakeFiles/inf_calc.dir/main.c.obj: CMakeFiles/inf_calc.dir/flags.make
-CMakeFiles/inf_calc.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/inf_calc.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\inf_calc.dir\main.c.obj   -c C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\main.c
-
-CMakeFiles/inf_calc.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inf_calc.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\main.c > CMakeFiles\inf_calc.dir\main.c.i
-
-CMakeFiles/inf_calc.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inf_calc.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\main.c -o CMakeFiles\inf_calc.dir\main.c.s
-
 CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj: CMakeFiles/inf_calc.dir/flags.make
 CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj: ../InfinityCalculator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\inf_calc.dir\InfinityCalculator.c.obj   -c C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\InfinityCalculator.c
 
 CMakeFiles/inf_calc.dir/InfinityCalculator.c.i: cmake_force
@@ -104,7 +91,7 @@ CMakeFiles/inf_calc.dir/InfinityCalculator.c.s: cmake_force
 
 CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj: CMakeFiles/inf_calc.dir/flags.make
 CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj: ../InfixToPostfix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\inf_calc.dir\InfixToPostfix.c.obj   -c C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\InfixToPostfix.c
 
 CMakeFiles/inf_calc.dir/InfixToPostfix.c.i: cmake_force
@@ -117,7 +104,7 @@ CMakeFiles/inf_calc.dir/InfixToPostfix.c.s: cmake_force
 
 CMakeFiles/inf_calc.dir/Input.c.obj: CMakeFiles/inf_calc.dir/flags.make
 CMakeFiles/inf_calc.dir/Input.c.obj: ../Input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/inf_calc.dir/Input.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/inf_calc.dir/Input.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\inf_calc.dir\Input.c.obj   -c C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\Input.c
 
 CMakeFiles/inf_calc.dir/Input.c.i: cmake_force
@@ -130,7 +117,7 @@ CMakeFiles/inf_calc.dir/Input.c.s: cmake_force
 
 CMakeFiles/inf_calc.dir/PostCalculator.c.obj: CMakeFiles/inf_calc.dir/flags.make
 CMakeFiles/inf_calc.dir/PostCalculator.c.obj: ../PostCalculator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/inf_calc.dir/PostCalculator.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/inf_calc.dir/PostCalculator.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\inf_calc.dir\PostCalculator.c.obj   -c C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\PostCalculator.c
 
 CMakeFiles/inf_calc.dir/PostCalculator.c.i: cmake_force
@@ -141,22 +128,35 @@ CMakeFiles/inf_calc.dir/PostCalculator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inf_calc.dir/PostCalculator.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\PostCalculator.c -o CMakeFiles\inf_calc.dir\PostCalculator.c.s
 
+CMakeFiles/inf_calc.dir/main.c.obj: CMakeFiles/inf_calc.dir/flags.make
+CMakeFiles/inf_calc.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/inf_calc.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\inf_calc.dir\main.c.obj   -c C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\main.c
+
+CMakeFiles/inf_calc.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inf_calc.dir/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\main.c > CMakeFiles\inf_calc.dir\main.c.i
+
+CMakeFiles/inf_calc.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inf_calc.dir/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\choi1_lrf1xg7\CLionProjects\Infinity_Calculator\main.c -o CMakeFiles\inf_calc.dir\main.c.s
+
 # Object files for target inf_calc
 inf_calc_OBJECTS = \
-"CMakeFiles/inf_calc.dir/main.c.obj" \
 "CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj" \
 "CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj" \
 "CMakeFiles/inf_calc.dir/Input.c.obj" \
-"CMakeFiles/inf_calc.dir/PostCalculator.c.obj"
+"CMakeFiles/inf_calc.dir/PostCalculator.c.obj" \
+"CMakeFiles/inf_calc.dir/main.c.obj"
 
 # External object files for target inf_calc
 inf_calc_EXTERNAL_OBJECTS =
 
-inf_calc.exe: CMakeFiles/inf_calc.dir/main.c.obj
 inf_calc.exe: CMakeFiles/inf_calc.dir/InfinityCalculator.c.obj
 inf_calc.exe: CMakeFiles/inf_calc.dir/InfixToPostfix.c.obj
 inf_calc.exe: CMakeFiles/inf_calc.dir/Input.c.obj
 inf_calc.exe: CMakeFiles/inf_calc.dir/PostCalculator.c.obj
+inf_calc.exe: CMakeFiles/inf_calc.dir/main.c.obj
 inf_calc.exe: CMakeFiles/inf_calc.dir/build.make
 inf_calc.exe: CMakeFiles/inf_calc.dir/linklibs.rsp
 inf_calc.exe: CMakeFiles/inf_calc.dir/objects1.rsp

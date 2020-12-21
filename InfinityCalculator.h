@@ -9,15 +9,14 @@
 typedef struct _digit {
     int digit;
     struct _digit * next;
-} Digit, *pDigit;
+} Digit;
 
 typedef struct _number {
     int integer_part_size;
     int decimal_part_size;
     Digit * integer_part;
     Digit * decimal_part;
-    Digit * cur;
-} Num, *pNum;
+} Num;
 
 typedef char Data;
 
@@ -27,7 +26,7 @@ typedef struct _node {
 } Node;
 
 typedef struct _block {
-    Num operand;
+    Num* operand;
     struct _block * next;
 } Block;
 
@@ -46,8 +45,8 @@ typedef struct _operand {
 } Operand;
 
 void DigitInit(Digit * pdigit);
-
 void NumInit(Num * pnum);
+
 int IntPartIsEmpty(Num * pnum);
 int DecPartIsEmpty(Num * pnum);
 void IntPartPush(Num * pnum, int data);
@@ -70,8 +69,9 @@ Data OperatorPeek (Operator * pOp);
 
 void OperandInit (Operand * pOp);
 int OperandIsEmpty(Operand * pOp);
-void OperandPush (Operand * pOp, Num data);
-Num OperandPop (Operand * pOp);
-Num OperandPeek (Operand * pOp);
+void OperandPush (Operand * pOp, Num* data);
+Num* OperandPop (Operand * pOp);
+Num* OperandPeek (Operand * pOp);
+
 
 #endif
